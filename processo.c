@@ -13,7 +13,7 @@ int ler_processos(const char *nome_arquivo, Processo processos[]) {
 
     char linha[512];
     int i = 0;
-    fgets(linha, sizeof(linha), fp); // Ignora cabecalho
+    fgets(linha, sizeof(linha), fp); 
 
     while (fgets(linha, sizeof(linha), fp) && i < MAX_PROCESSOS) {
         Processo p;
@@ -29,7 +29,7 @@ int ler_processos(const char *nome_arquivo, Processo processos[]) {
         strcpy(p.data_ajuizamento, token);
 
         token = strtok(NULL, ",");
-        p.id_classe = atoi(token + 1); // Ignora '{'
+        p.id_classe = atoi(token + 1); 
 
         token = strtok(NULL, ",");
         p.num_assuntos = 0;
