@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "processo.h"
+#include "processos.h"
 
 int main() {
     Processo processos[MAX_PROCESSOS];
