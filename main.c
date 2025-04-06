@@ -13,7 +13,7 @@ int main() {
 
     int opcao;
     do {
-        printf("\nMenu de opcoes:\n");
+        printf("\n==MENU DE OPCOES==:\n");
         printf("1. Ordenar por ID (crescente)\n");
         printf("2. Ordenar por data de ajuizamento (decrescente)\n");
         printf("3. Contar processos por id_classe\n");
