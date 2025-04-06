@@ -27,13 +27,13 @@ int main() {
         switch (opcao) {
             case 1:
                 ordenar_por_id(processos, qtd_processos);
-                salvar_csv("saida_ordenada_por_id.csv", processos, qtd_processos);
-                printf("Arquivo 'saida_ordenada_por_id.csv' gerado.\n");
+                salvar_csv("saidaordenadaid.csv", processos, qtd_processos);
+                printf("Arquivo 'saidaordenadaid.csv' gerado.\n");
                 break;
             case 2:
                 ordenar_por_data(processos, qtd_processos);
-                salvar_csv("saida_ordenada_por_data.csv", processos, qtd_processos);
-                printf("Arquivo 'saida_ordenada_por_data.csv' gerado.\n");
+                salvar_csv("saidaordenadadata.csv", processos, qtd_processos);
+                printf("Arquivo 'saidaordenadadata.csv' gerado.\n");
                 break;
             case 3: {
                 int id_classe;
