@@ -1,5 +1,5 @@
-#ifndef PROCESSO_H
-#define PROCESSO_H
+#ifndef PROCESSOS_H
+#define PROCESSOS_H
 
 #define MAX_PROCESSOS 1000
 #define MAX_ASSUNTOS 10
