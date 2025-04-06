@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "processo.h"
+#include "processos.h"
 
 int ler_processos(const char *nome_arquivo, Processo processos[]) {
     FILE *fp = fopen(nome_arquivo, "r");
@@ -13,7 +13,7 @@ int ler_processos(const char *nome_arquivo, Processo processos[]) {
 
     char linha[512];
     int i = 0;
-    fgets(linha, sizeof(linha), fp); 
+    fgets(linha, sizeof(linha), fp); // Ignora cabecalho
 
     while (fgets(linha, sizeof(linha), fp) && i < MAX_PROCESSOS) {
         Processo p;
@@ -29,7 +29,7 @@ int ler_processos(const char *nome_arquivo, Processo processos[]) {
         strcpy(p.data_ajuizamento, token);
 
         token = strtok(NULL, ",");
-        p.id_classe = atoi(token + 1); 
+        p.id_classe = atoi(token + 1); // Ignora '{'
 
         token = strtok(NULL, ",");
         p.num_assuntos = 0;
